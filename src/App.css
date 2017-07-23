@@ -1,24 +1,120 @@
-.App {
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.container:after,
+.container:before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/*--- HEADER ---*/
+
+.header {
+  
+}
+
+.container--header {
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.signIn {
+  float: right;
+}
+
+.signIn__user {
+  display: inline-block;
+  width: 160px;
+  margin-right: 10px;
+}
+
+.fa-user {
+  margin-right: 5px;
+}
+
+/*--- FILTER ---*/
+
+.container--filter {
+  width: 780px;
+}
+
+/*--- FORM ---*/
+
+.form {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
+.form__inputs {
+  padding-bottom: 20px;
+  text-align: left;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.form__input {
+  display: inline-block;
+  width: 40%;
+ }
+
+.form__input label,
+.form__input input {
+  display: block;
+}
+
+.form__input label {
+  margin-bottom: 10px;
+  color: #777;
+}
+
+.form__input input {
+  width: 100%;
+  height: 30px;
+}
+
+.form__input:first-child {
+  margin-right: 15%;
+}
+
+.form__submit {
+  padding: 40px 0;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.form__button {
+  width: 320px;
   height: 80px;
+  margin: 0 auto;
+  font-size: 24px;
+  border-radius: 40px;
+  border: 5px solid #999;
+  cursor: pointer;
+
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+/*--- TABLE ---*/
+
+.container--table {
+  width: 780px;
 }
 
-.App-intro {
-  font-size: large;
+.table {
+  padding: 40px 0;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.table__body {
+  width: 100%;
+  border: 0;
+  border-spacing: 0px;
+  border-left: 1px solid #e5e5e5; 
+  border-bottom: 1px solid #e5e5e5; 
+}
+
+.table__body th,
+.table__body td {
+  padding: 10px;
+  border-top: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
 }
